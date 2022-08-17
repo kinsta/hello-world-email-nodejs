@@ -14,8 +14,16 @@ Once you've created your application in MyKinsta you will need to set environmen
 * `SENDGRID_API_KEY`: The API key created on SendGrid
 * `TEST_EMAIL_TO_ADDRESS`: The address you'd like to send the test email to
 * `TEST_EMAIL_FROM_ADDRESS`: The address you'd like to send the test email from
+* `TEST_ENDPOINT`: The endpoint you'd like to use as a trigger to send the test email. Please use a random string of at least 8 characters.
 
 ## Deployment Lifecycle
-Whenever a deployment is initiated (through creating an application or re-deploying due to an incoming commit) the `npm build` command is run, followed by the `npm start` command. This project does not require a build phase, the start command runs `node sendMail.js` which will send a test email. 
+Whenever a deployment is initiated (through creating an application or re-deploying due to an incoming commit) the `npm build` command is run, followed by the `npm start` command. 
 
-This means that the application will send **one** email each time it is deployed. 
+This project does not require a build phase, the start command runs `node server.js` which starts an Express server with two endpoints:
+* `/`: A simple page that returns the Hello World message
+* `/${TEST_ENDPOINT}` A page that - when visited - will trigger the sending of a test email. 
+
+## Triggering an email
+To trigger the sending of an email you'll need to find the URL of your deployment on the Deployments page. Append your test endpoint to this URL and visit that page to trigger the email. 
+
+For example, if your `TEST_ENDPOINT` is set to `o34nifnodhni4of` and your latest deployment is at `example.kinsta.app` you can trigger a test email by visiting `https://example.kinsta.app/o34nifnodhni4of`

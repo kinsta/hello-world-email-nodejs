@@ -4,6 +4,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 if(!process.env.TEST_EMAIL_TO_ADDRESS || !process.env.TEST_EMAIL_FROM_ADDRESS || !process.env.SENDGRID_API_KEY) {
     console.log("Make sure to set the following environment variables for your application:\n‣ TEST_EMAIL_TO_ADDRESS\n‣ TEST_EMAIL_FROM_ADDRESS\n‣ SENDGRID_API_KEY\n")
+    process.exit()
 }
 
 const msg = {
