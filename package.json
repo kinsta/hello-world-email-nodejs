@@ -7,7 +7,7 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "dotenv": "^16.0.1",
