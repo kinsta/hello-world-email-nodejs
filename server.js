@@ -20,8 +20,8 @@ app.get(`/${process.env.TEST_ENDPOINT}`, async (req, res) => {
         to: process.env.TEST_EMAIL_TO_ADDRESS,
         from: process.env.TEST_EMAIL_FROM_ADDRESS,
         subject: 'My Test Email',
-        text: 'This is a test email sent when your application was deployed',
-        html: 'This is a <strong>test</strong> email sent when your application was deployed',
+        text: 'This is a test email sent by your Node.js application when you visited the test endpoint',
+        html: 'This is a <strong>test</strong> email sent by your Node.js application when you visited the test endpoint',
     };
 
     try {
