@@ -1,4 +1,4 @@
-# Kinsta - Hello World - Eamail Sending With Node.js
+# Kinsta - Hello World - Email Sending With Node.js
 An example of how to set your Node.js application to send emails via SendGrid from Kinsta App Hosting services.
 
 > Kinsta’s Application Hosting is a service to run your web apps and any databases side by side in a hassle-free environment, tailored for developer needs and ease of use. App Hosting is currently in an invite-only beta phase, sign up for a test account at [kinsta.com/application-hosting](https://kinsta.com/appplication-hosting).
