@@ -4,11 +4,9 @@ An example of how to set your Node.js application to send emails via SendGrid fr
 ---
 Kinsta is a developer-centric cloud host / PaaS. We’re striving to make it easier for you to share your web projects with your users. Focus on coding and building, and we’ll take care of deployment and provide fast, scalable hosting. + 24/7 expert-only support.
 
-Get started for free, the first $20 is on us!
-
-[Application Hosting](https://kinsta.com/application-hosting)
-
-[Database Hosting](https://kinsta.com/database-hosting)
+- [Start your free trial](https://kinsta.com/signup/?product_type=app-db)
+- [Application Hosting](https://kinsta.com/application-hosting)
+- [Database Hosting](https://kinsta.com/database-hosting)
 
 ## Email Support At Kinsta
 Kinsta does not natively support outbound email from servers. Sending emails through specialized outbound providers such as [SendGrid](https://sendgrid.com/) or [Mailchimp](https://mailchimp.com/) offers more flexibility and higher success rates for transactional and campaign emails. 
